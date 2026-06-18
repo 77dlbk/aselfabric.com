@@ -33,11 +33,21 @@ export function Hero() {
           ◦ Кыргызстан · Бишкек · с 2014
         </motion.span>
 
-        <h1 className="text-display text-milk text-[clamp(2.75rem,9vw,8rem)] max-w-[14ch]">
-          <SplitWord text="Швейная" delay={0.2} />
+        <h1 className="text-display text-milk text-[clamp(2rem,6vw,4.5rem)] leading-tight max-w-[20ch]">
+          <span className="block text-xs md:text-sm text-sand tracking-[0.2em] uppercase font-sans mb-4">
+            Asel Premium Garments
+          </span>
+          <SplitWord text="Швейная" delay={0.2} />{" "}
+          <SplitWord text="фабрика" delay={0.3} />{" "}
+          <SplitWord text="в" delay={0.4} />{" "}
+          <SplitWord text="Бишкеке" delay={0.5} />
           <br />
-          <SplitWord text="фабрика" delay={0.4} />{" "}
-          <em className="italic font-light text-sand"><SplitWord text="Asel" delay={0.6} /></em>
+          <span className="text-sand font-light italic">
+            <SplitWord text="—" delay={0.6} />{" "}
+            <SplitWord text="пошив" delay={0.7} />{" "}
+            <SplitWord text="одежды" delay={0.8} />{" "}
+            <SplitWord text="оптом" delay={0.9} />
+          </span>
         </h1>
 
         <motion.p

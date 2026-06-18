@@ -16,11 +16,11 @@ import { Preloader } from "@/components/site/Preloader";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Asel — Швейная фабрика в Бишкеке | Пошив одежды оптом" },
+      { title: "Швейная фабрика в Бишкеке — пошив одежды оптом | Asel" },
       {
         name: "description",
         content:
-          "Asel — швейная фабрика полного цикла в Кыргызстане (Бишкек). Профессиональный пошив одежды оптом под ключ для брендов и маркетплейсов (Wildberries, Ozon). Производство до 10 000 изделий в месяц.",
+          "Швейная фабрика Asel в Бишкеке. Оптовый пошив детской, подростковой и повседневной одежды. Разработка образцов, лекал, качественный пошив под ключ.",
       },
       {
         name: "keywords",
@@ -29,25 +29,25 @@ export const Route = createFileRoute("/")({
       },
       { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
-      { property: "og:title", content: "Asel — Швейная фабрика в Бишкеке | Пошив одежды оптом" },
+      { property: "og:title", content: "Швейная фабрика в Бишкеке — пошив одежды оптом | Asel" },
       {
         property: "og:description",
-        content: "Крупносерийное производство одежды под ключ в Кыргызстане. Пошив для маркетплейсов (Wildberries, Ozon) с контролем качества.",
+        content: "Швейная фабрика Asel в Бишкеке. Оптовый пошив детской, подростковой и повседневной одежды. Разработка образцов, лекал, качественный пошив под ключ.",
       },
-      { property: "og:url", content: "https://aselfabric.com" },
+      { property: "og:url", content: "https://aselfabric.com/" },
       { property: "og:site_name", content: "Швейная фабрика Asel" },
       { property: "og:locale", content: "ru_RU" },
       { property: "og:image", content: "https://aselfabric.com/assets/hero-factory.jpg" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Asel — Швейная фабрика в Бишкеке | Пошив одежды оптом" },
+      { name: "twitter:title", content: "Швейная фабрика в Бишкеке — пошив одежды оптом | Asel" },
       {
         name: "twitter:description",
-        content: "Крупносерийное производство одежды под ключ в Кыргызстане. Пошив для маркетплейсов (Wildberries, Ozon) с контролем качества.",
+        content: "Швейная фабрика Asel в Бишкеке. Оптовый пошив детской, подростковой и повседневной одежды. Разработка образцов, лекал, качественный пошив под ключ.",
       },
       { name: "twitter:image", content: "https://aselfabric.com/assets/hero-factory.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://aselfabric.com" },
+      { rel: "canonical", href: "https://aselfabric.com/" },
     ],
   }),
   component: Index,
@@ -80,7 +80,7 @@ function Index() {
               "latitude": 42.8746,
               "longitude": 74.5698
             },
-            "description": "Asel — современная швейная фабрика полного цикла в Кыргызстане (Бишкек). Пошив одежды оптом под ключ для брендов и маркетплейсов (Wildberries, Ozon).",
+            "description": "Швейная фабрика Asel в Бишкеке. Оптовый пошив детской, подростковой и повседневной одежды. Разработка образцов, лекал, качественный пошив под ключ.",
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
               "dayOfWeek": [
