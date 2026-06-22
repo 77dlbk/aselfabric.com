@@ -66,7 +66,7 @@ function Index() {
             "image": "https://aselfabric.com/assets/hero-factory.jpg",
             "@id": "https://aselfabric.com/#organization",
             "url": "https://aselfabric.com",
-            "telephone": "+996700000000",
+            "telephone": "+996707604874",
             "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
@@ -96,7 +96,7 @@ function Index() {
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+996700000000",
+              "telephone": "+996707604874",
               "contactType": "sales",
               "areaServed": "CIS",
               "availableLanguage": ["Russian"]

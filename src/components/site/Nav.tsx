@@ -1,5 +1,16 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { MessageCircle } from "lucide-react";
+
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
 
 const links = [
   { href: "#about", label: "О фабрике" },
@@ -49,12 +60,33 @@ export function Nav() {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="hidden lg:inline-flex items-center gap-2 rounded-full border border-ink px-5 py-2.5 text-sm text-ink transition-all hover:bg-ink hover:text-milk"
-        >
-          Получить расчет
-        </a>
+        <div className="hidden lg:flex items-center gap-5">
+          <a
+            href="https://www.instagram.com/asel_fabric/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="text-ink/70 hover:text-ink transition-colors"
+          >
+            <InstagramIcon className="h-5 w-5 stroke-[1.5]" />
+          </a>
+          <a
+            href="https://wa.me/996707604874"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+            className="text-ink/70 hover:text-ink transition-colors"
+          >
+            <MessageCircle className="h-5 w-5 stroke-[1.5]" />
+          </a>
+          <span className="w-px h-4 bg-border" />
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 rounded-full border border-ink px-5 py-2.5 text-sm text-ink transition-all hover:bg-ink hover:text-milk"
+          >
+            Получить расчет
+          </a>
+        </div>
 
         <button
           onClick={() => setOpen(!open)}
@@ -91,6 +123,26 @@ export function Nav() {
             >
               Получить расчет
             </a>
+
+            <div className="flex gap-6 items-center mt-6 pt-6 border-t border-border/60">
+              <a
+                href="https://www.instagram.com/asel_fabric/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 text-ink/75 hover:text-ink text-sm font-serif"
+              >
+                <InstagramIcon className="h-5 w-5" /> Instagram
+              </a>
+              <span className="w-px h-4 bg-border/60" />
+              <a
+                href="https://wa.me/996707604874"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-2 text-ink/75 hover:text-ink text-sm font-serif"
+              >
+                <MessageCircle className="h-5 w-5" /> WhatsApp
+              </a>
+            </div>
           </div>
         </motion.div>
       )}

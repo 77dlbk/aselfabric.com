@@ -1,7 +1,17 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import heroImg from "@/assets/hero-factory.jpg";
-import { ArrowRight, ArrowDown } from "lucide-react";
+import { ArrowRight, ArrowDown, MessageCircle } from "lucide-react";
+
+function InstagramIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x="2" y="2" width="20" height="20" rx="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+    </svg>
+  );
+}
 
 export function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -79,6 +89,27 @@ export function Hero() {
           >
             Связаться с нами
           </a>
+
+          <div className="flex items-center gap-3 ml-2 sm:ml-4">
+            <a
+              href="https://www.instagram.com/asel_fabric/"
+              target="_blank"
+              rel="noreferrer"
+              className="grid h-12 w-12 place-items-center rounded-full border border-milk/30 text-milk hover:bg-milk hover:text-ink transition-all"
+              aria-label="Instagram"
+            >
+              <InstagramIcon className="h-5 w-5 stroke-[1.5]" />
+            </a>
+            <a
+              href="https://wa.me/996707604874"
+              target="_blank"
+              rel="noreferrer"
+              className="grid h-12 w-12 place-items-center rounded-full border border-milk/30 text-milk hover:bg-milk hover:text-ink transition-all"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle className="h-5 w-5 stroke-[1.5]" />
+            </a>
+          </div>
         </motion.div>
       </motion.div>
 

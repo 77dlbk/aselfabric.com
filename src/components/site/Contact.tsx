@@ -47,7 +47,7 @@ export function Contact() {
                 <Phone className="h-5 w-5 text-sand stroke-[1] mt-1 shrink-0" />
                 <div>
                   <div className="text-xs text-milk/50 tracking-wider uppercase mb-1">Телефон / WhatsApp</div>
-                  <a href="tel:+996700000000" className="link-underline">+996 700 00 00 00</a>
+                  <a href="tel:+996707604874" className="link-underline">+996 707 604 874</a>
                 </div>
               </div>
               <div className="flex gap-4 items-start">

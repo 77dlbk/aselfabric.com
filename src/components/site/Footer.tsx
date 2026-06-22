@@ -36,27 +36,27 @@ export function Footer() {
         <div className="lg:col-span-4">
           <div className="text-eyebrow mb-5">Контакты</div>
           <p className="text-ink/80">Кыргызстан, г. Бишкек,<br />ул. Шабдан Баатыра, 1К</p>
-          <a href="tel:+996700000000" className="block mt-4 link-underline">+996 700 00 00 00</a>
+          <a href="tel:+996707604874" className="block mt-4 link-underline">+996 707 604 874</a>
           <a href="mailto:asel@aselfabric.com" className="block mt-2 link-underline">asel@aselfabric.com</a>
 
           <div className="mt-6 flex gap-3">
             <a
-              href="https://wa.me/996700000000"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="WhatsApp"
-              className="grid h-11 w-11 place-items-center rounded-full border border-border hover:bg-ink hover:text-milk transition-colors"
-            >
-              <MessageCircle className="h-4 w-4 stroke-[1.5]" />
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/asel_fabric/"
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
               className="grid h-11 w-11 place-items-center rounded-full border border-border hover:bg-ink hover:text-milk transition-colors"
             >
               <InstagramIcon className="h-4 w-4 stroke-[1.5]" />
+            </a>
+            <a
+              href="https://wa.me/996707604874"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="WhatsApp"
+              className="grid h-11 w-11 place-items-center rounded-full border border-border hover:bg-ink hover:text-milk transition-colors"
+            >
+              <MessageCircle className="h-4 w-4 stroke-[1.5]" />
             </a>
           </div>
         </div>
